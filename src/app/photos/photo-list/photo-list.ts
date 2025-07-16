@@ -4,11 +4,13 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Photo } from '../photo/photo';
 import { PhotoService } from '../photo/photo.service';
-import { PhotoComponent } from '../photo/photo.component';
+
+import { Photos } from './photos/photos';
 
 @Component({
   selector: 'app-photo-list',
-  imports: [CommonModule, PhotoComponent],
+  standalone: true,
+  imports: [CommonModule, Photos],
   templateUrl: './photo-list.html',
   styleUrl: './photo-list.scss',
 })
